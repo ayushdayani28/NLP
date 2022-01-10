@@ -1,0 +1,7 @@
+1. Read a text file.
+2. Split the entire text into sentences and tokenize those sentences by further splitting them into words.
+3. Preprocessing: remove all stop words and words that are not in a-z or A-Z.
+4. Fed the sentences to similarity matrix generator where two vectors are formed and the cosine distance is calculated between every pair of sentences excluding a pair to itself.
+5. This matrix is a distance or score matrix which is then fed to nx.from_numpy_array which converts the matrix or 2d Array into a graph.
+6. Then after this graph is fed to nx.PageRank function to calculate the rank of each statement.
+7. At last the top Top_n sentences are used in the final summary.
